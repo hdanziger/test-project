@@ -2,11 +2,19 @@
 <html>
   <head>
     <title>Test Project</title>
+    <style>
+        body {
+        	background-image: url("background.jpg");
+                background-repeat:no-repeat;
+               background-size:cover;
+               background-color: #87CEFA;
+        }
+        </style>
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
   </head>
-  <body style="background-color:powderblue;">
+  <body>
     <div id="container">
-    <h1 style="font-family:Comic Sans MS; text-align:center;">Tip Calculator</h1>
+    <h1>Tip Calculator</h1>
     <div id="calculator">
 
       <form>
@@ -14,8 +22,14 @@
           <p>
             $ <input type="text">
           <p> How was your service?
-            <p>
-              <input type="text">
+            <select>
+              <option disabled selected value="cao">-- Choose an Option --</option>
+              <option value="ab">Above and Beyond</option>
+              <option value="Satisfactory">Satisfactory</option>
+              <option value="Adequate">Adequate</option>
+              <option value="Mediocre">Mediocre</option>
+              <option value="Abismal">Abismal</option>
+              </select>
       </form>
       </div>
       </div>
